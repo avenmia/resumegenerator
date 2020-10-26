@@ -1,10 +1,11 @@
 import React from 'react';
 import { Page, PDFViewer, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
+import './App.css';
 
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   },
   section: {
     margin: 10,
@@ -15,9 +16,20 @@ const styles = StyleSheet.create({
 
 const Resume = () => (
   <Document>
-    <Page size="A4" style={styles.page}>
+    <Page size="LETTER" style={styles.page}>
       <View style={styles.section}>
         <Text>Section #1</Text>
+      </View>
+      <View style={styles.section}>
+        <Text>Section #2</Text>
+      </View>
+    </Page>
+    <Page size="LETTER" style={styles.page}>
+      <View style={styles.section}>
+        <Text>Section #1</Text>
+      </View>
+      <View style={styles.section}>
+        <Text>Section #2</Text>
       </View>
     </Page>
   </Document>
@@ -26,7 +38,7 @@ const Resume = () => (
 function App() {
   return (
     <div className="App">
-        <PDFViewer>
+        <PDFViewer className="PDFViewer">
           <Resume />
         </PDFViewer>
     </div>
