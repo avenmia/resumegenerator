@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page, PDFViewer, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
 import './App.css';
+import ResumeData from "./assets/resumeData.json"
 
 const styles = StyleSheet.create({
   page: {
@@ -14,22 +15,16 @@ const styles = StyleSheet.create({
   }
 })
 
+const ResumeSections = (section:string ) => (
+  <Text>{section}</Text>
+)
+
 const Resume = () => (
   <Document>
     <Page size="LETTER" style={styles.page}>
       <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View>
-    </Page>
-    <Page size="LETTER" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
+        {console.log(ResumeData)}
+        {Object.keys(ResumeData).map(rd => ResumeSections(rd))}
       </View>
     </Page>
   </Document>
