@@ -1,9 +1,29 @@
 import React from 'react';
 import { Page, PDFViewer, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
 import './App.css';
-import ResumeData from "./assets/resumeData.json"
+import resumeData from "./assets/resumeData.json"
+import { ResumeData } from "./ResumeData";
 
 const styles = StyleSheet.create({
+  pageHeader:{
+    margin: 10,
+    padding: 10,
+    textAlign: 'center'
+  },
+  jobTitle: {
+    fontSize: 12,
+    textAlign: 'center'
+  },
+  contact:{
+    flexDirection: 'row',
+    fontSize: 11,
+  },
+  header1:{
+
+  },
+  header2:{
+
+  },
   page: {
     flexDirection: 'row',
     backgroundColor: '#fff',
@@ -16,19 +36,30 @@ const styles = StyleSheet.create({
 })
 
 const ResumeSections = (section:string ) => (
-  <Text>{section}</Text>
+  <Text>{section} </Text>
 )
 
-const Resume = () => (
+const Resume = () => {
+  const resume = resumeData as ResumeData  
+  return (
   <Document>
     <Page size="LETTER" style={styles.page}>
       <View style={styles.section}>
-        {console.log(ResumeData)}
-        {Object.keys(ResumeData).map(rd => ResumeSections(rd))}
+        <Text style={styles.pageHeader}>
+          {resume.Header.Name}
+        </Text>
+        <Text style={styles.jobTitle}>
+          {resume.Header["Job Title"]}
+        </Text>
+        <View style={styles.contact}>
+            {resume.Header.Contact.map(c => ResumeSections(c))} 
+        </View>
+        {Object.keys(resumeData).map(rd => ResumeSections(rd))}
       </View>
     </Page>
   </Document>
-)
+  )
+}
 
 function App() {
   return (

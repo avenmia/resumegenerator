@@ -2,7 +2,7 @@
   "Header": {
     "Name": "Michael Avendano",
     "Job Title": "Software Engineer",
-    "Contact": ["linkedin.com/in/michael-avendano", "github.com/avenmia"]
+    "Contact": ["tempemail@email.com", "linkedin.com/in/michael-avendano", "github.com/avenmia"]
   },
   "Skills": {
     "Languages" :["C#", "TypeScript", "JavaScript", "Python"],
