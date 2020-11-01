@@ -2,7 +2,9 @@ import React from 'react';
 import { Page, PDFViewer, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
 import './App.css';
 import resumeData from "./assets/resumeData.json"
-import { ResumeData } from "./ResumeData";
+import { EducationExperience, ResumeData, Skill, WorkExperience } from "./types/ResumeData";
+
+const resume = resumeData as ResumeData 
 
 const styles = StyleSheet.create({
   pageHeader:{
@@ -35,12 +37,48 @@ const styles = StyleSheet.create({
   }
 })
 
-const ResumeSections = (section:string ) => (
-  <Text>{section} </Text>
+const HeaderSection = (header: string) => (
+  <Text>{header}</Text>
 )
 
+const ContentSection = (section:string) => (
+  <Text>{section}</Text>
+)
+
+const SkillSection = (category: "Skills", subcategory: Skill) => {
+  return(
+    <View>
+      {resume.Content[category][subcategory].map(x => ContentSection(x))}
+    </View>
+)}
+
+const WorkExperienceSection = (workExperience: WorkExperience) => 
+{
+  return (
+    <View>
+      <Text>Title: {workExperience["Title"]}</Text>
+      <Text>Employer: {workExperience["Employer"]}</Text>
+      <Text>Start Date: {workExperience["Start Date"]}</Text>
+      <Text>End Date: {workExperience["End Date"]}</Text>
+      <Text>Description: {workExperience["Description"]}</Text>
+    </View>
+  )
+}
+
+const EducationSection = (educationExperience: EducationExperience) =>
+{
+  return (
+    <View>
+      <Text>School: {educationExperience["School"]}</Text>
+      <Text>Degree: {educationExperience["Degree"]}</Text>
+      <Text>Major: {educationExperience["Major"]}</Text>
+      <Text>Start Date: {educationExperience["Start Date"]}</Text>
+      <Text>End Date: {educationExperience["End Date"]}</Text>
+    </View>
+  )
+}
+
 const Resume = () => {
-  const resume = resumeData as ResumeData  
   return (
   <Document>
     <Page size="LETTER" style={styles.page}>
@@ -52,9 +90,23 @@ const Resume = () => {
           {resume.Header["Job Title"]}
         </Text>
         <View style={styles.contact}>
-            {resume.Header.Contact.map(c => ResumeSections(c))} 
+            {resume.Header.Contact.map(c => ContentSection(c))} 
         </View>
-        {Object.keys(resumeData).map(rd => ResumeSections(rd))}
+        <View>
+          {HeaderSection("Skills")}
+          <View>
+            {Object.values(Skill).map(s => SkillSection("Skills", s))}
+          </View>
+          <View>
+            {resume.Content["Work Experience"].map(we => WorkExperienceSection(we))}
+          </View>
+          <View>
+            {resume.Content["Education"].map(ee => EducationSection(ee))}
+          </View>
+          <View>
+            {resume.Content["Professional Associations, Activities, Achievements"].map(p => ContentSection(p))}
+          </View>
+        </View>
       </View>
     </Page>
   </Document>
