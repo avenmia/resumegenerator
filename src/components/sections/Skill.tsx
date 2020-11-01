@@ -1,6 +1,6 @@
 import React from "react";
 import { ResumeData, Skill } from "../../types/ResumeData";
-import { ContentSection } from "./Content";
+import { ContentSection } from "../styledcontent/Content";
 import { View } from '@react-pdf/renderer'
 import resumeData from "../../assets/resumeData.json"
 const resume = resumeData as ResumeData 

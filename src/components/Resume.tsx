@@ -1,18 +1,18 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
+import { Page, View, Document, StyleSheet } from '@react-pdf/renderer'
 import resumeData from "../assets/resumeData.json"
 import { ResumeData, Skill } from "../types/ResumeData";
-import { HeaderSection } from "./sections/Header";
-import { ContentSection } from "./sections/Content";
+import { HeaderSection } from "./styledcontent/Header";
+import { ContentSection } from "./styledcontent/Content";
 import { SkillSection } from "./sections/Skill";
 import { WorkExperienceSection } from "./sections/WorkExperience";
 import { EducationSection } from "./sections/Education";
+import { Header } from "./sections/Header";
 
 const resume = resumeData as ResumeData 
 
 const styles = StyleSheet.create({
   pageHeader:{
-    margin: 10,
     padding: 10,
     textAlign: 'center'
   },
@@ -44,16 +44,8 @@ const styles = StyleSheet.create({
 export const Resume = () => (
   <Document>
     <Page size="LETTER" style={styles.page}>
-      <View style={styles.section}>
-        <Text style={styles.pageHeader}>
-          {resume.Header.Name}
-        </Text>
-        <Text style={styles.jobTitle}>
-          {resume.Header["Job Title"]}
-        </Text>
-        <View style={styles.contact}>
-            {resume.Header.Contact.map(c => ContentSection(c))} 
-        </View>
+      <View>
+        <Header />
         <View>
           {HeaderSection("Skills")}
           <View>
