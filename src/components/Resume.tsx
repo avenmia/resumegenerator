@@ -51,9 +51,11 @@ export const Resume = () => (
           <View>
             {Object.values(Skill).map(s => SkillSection("Skills", s))}
           </View>
+          {HeaderSection("Work Experience")}
           <View>
             {resume.Content["Work Experience"].map(we => WorkExperienceSection(we))}
           </View>
+          {HeaderSection("Education")}
           <View>
             {resume.Content["Education"].map(ee => EducationSection(ee))}
           </View>
