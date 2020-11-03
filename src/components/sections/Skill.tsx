@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     fontSize: "11pt",
     position: "absolute",
     width: "500px",
-    marginLeft: "30%"
+    marginLeft: "20%"
   }
 })
 
