@@ -10,19 +10,58 @@ Font.register({
 
 
 export const styles = StyleSheet.create({
+  date: {
+    fontFamily: "Roboto",
+    fontSize: "13pt",
+    color: '#2F5496',
+    paddingTop: "2pt",
+    marginTop : "1pt",
+    marginLeft: "300px",
+    marginRight: "20px"
+  },
+  dateSection: {
+    flexDirection: "row",
+  },
+  h1: {
 
+  },
+  h2: {
+    fontFamily: "Roboto",
+    fontWeight: "bold",
+    fontSize: "16pt",
+    marginTop: "5pt",
+    marginLeft: "12pt",
+    color: "#2F5496"
+  },
+  h3: {
+    fontFamily: "Roboto",
+    fontSize: "13pt",
+    color: '#2F5496',
+    marginLeft: "12pt",
+    marginTop: "1pt",
+    marginBottom: "1pt",
+    paddingTop: "2pt"
+  },
+  dashedListContent: {
+    fontFamily: "Roboto",
+    fontSize: "11pt",
+    marginLeft: "15pt",
+    paddingTop: "3pt",
+    paddingBottom: "3pt",
+    paddingLeft: "3pt"
+  },
+  middleContent: {
+    fontFamily: "Roboto",
+    fontSize: "11pt",
+    position: "absolute",
+    width: "500px",
+    marginLeft: "20%"
+  }
 })
 
 export const workExperienceStyles = StyleSheet.create({
   section: {
     display: 'flex',
-  },
-  jobTitle: {
-    fontSize: 13,
-    color: '#2F5496',
-    marginLeft: "12pt",
-    marginTop: "3pt",
-    paddingTop: "2pt"
   },
   employer: {
     fontFamily: "Roboto",
@@ -30,17 +69,6 @@ export const workExperienceStyles = StyleSheet.create({
     marginLeft: "12pt",
     fontSize: "11pt",
     fontWeight: "extrabold"
-  },
-  date: {
-    fontSize: "11pt",
-    color: '#2F5496',
-    justifyContent: "flex-end",
-    marginRight: "12pt"
-  },
-  dateSection: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between"
   },
   description: {
     fontSize: "11pt",
@@ -53,13 +81,6 @@ export const workExperienceStyles = StyleSheet.create({
 })
 
 export const educationStyles = StyleSheet.create({
-  school: {
-    fontSize: 13,
-    color: '#2F5496',
-    marginLeft: "12pt",
-    marginTop: "3pt",
-    paddingTop: "2pt"
-  },
   degree: {
     marginLeft: "12pt",
     fontSize: "11"
@@ -72,27 +93,10 @@ export const educationStyles = StyleSheet.create({
     fontSize: "11pt",
     marginLeft: "12pt"
   },
-  dateSection: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between"
-  },
-  date: {
-    fontSize: "11pt",
-    color: '#2F5496',
-    justifyContent: "flex-end",
-    marginRight: "12pt"
-  },
   subCategory: {
     fontSize: "11pt",
     paddingBottom: "3pt",
     marginLeft: "12pt"
-  },
-  content: {
-    fontSize: "11pt",
-    position: "absolute",
-    width: "500px",
-    marginLeft: "20%"
   }
 })
 
@@ -146,15 +150,6 @@ export const resumeStyles = StyleSheet.create({
   }
 })
 
-export const headerSectionStyles = StyleSheet.create({
-  header: {
-    fontSize: 16,
-    marginTop: "5pt",
-    marginLeft: "12pt",
-    color: "#2F5496"
-  }
-})
-
 export const skillsStyles = StyleSheet.create({
   section: {
     display: 'flex',
@@ -163,6 +158,7 @@ export const skillsStyles = StyleSheet.create({
   subCategory: {
     fontSize: "11pt",
     paddingBottom: "3pt",
+    marginTop: "1pt",
     marginLeft: "12pt"
   },
   content: {
@@ -170,16 +166,5 @@ export const skillsStyles = StyleSheet.create({
     position: "absolute",
     width: "500px",
     marginLeft: "20%"
-  }
-})
-
-export const associationStyles = StyleSheet.create({
-  content:{
-    fontSize: "11pt",
-    marginLeft: "15pt",
-    marginRight: "12pt",
-    paddingTop: "3pt",
-    paddingBottom: "3pt",
-    paddingLeft: "3pt",
   }
 })

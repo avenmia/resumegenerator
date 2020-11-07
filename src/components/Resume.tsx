@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, View, Document, StyleSheet, Font } from '@react-pdf/renderer'
+import { Page, View, Document } from '@react-pdf/renderer'
 import resumeData from "../assets/resumeData.json"
 import { ResumeData, Skill } from "../types/ResumeData";
 import { HeaderSection } from "./styledcontent/Header";

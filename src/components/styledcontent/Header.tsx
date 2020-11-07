@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "@react-pdf/renderer";
-import { headerSectionStyles } from "../styles/styles"
+import { styles } from "../styles/styles"
 
 export const HeaderSection = (header: string) => (
-  <Text style={headerSectionStyles.header}>{header}</Text>
+  <Text style={styles.h2}>{header}</Text>
 )
