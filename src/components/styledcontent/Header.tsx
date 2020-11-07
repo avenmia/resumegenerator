@@ -1,15 +1,7 @@
 import React from "react";
-import { Text, StyleSheet } from "@react-pdf/renderer";
-
-const styles = StyleSheet.create({
-  header: {
-    fontSize: 16,
-    marginTop: "5pt",
-    marginLeft: "12pt",
-    color: "#2F5496"
-  }
-})
+import { Text } from "@react-pdf/renderer";
+import { headerSectionStyles } from "../styles/styles"
 
 export const HeaderSection = (header: string) => (
-  <Text style={styles.header}>{header}</Text>
+  <Text style={headerSectionStyles.header}>{header}</Text>
 )
