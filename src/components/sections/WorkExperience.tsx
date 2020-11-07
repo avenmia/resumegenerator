@@ -33,7 +33,10 @@ const styles = StyleSheet.create({
   description: {
     fontSize: "11pt",
     marginLeft: "15pt",
-    marginRight: "12pt"
+    marginRight: "12pt",
+    paddingTop: "3pt",
+    paddingBottom: "3pt",
+    paddingLeft: "3pt",
   }
 })
 

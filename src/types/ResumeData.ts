@@ -28,10 +28,6 @@ export enum Skill {
   "Soft Skills" = "Soft Skills"
 }
 
-// export type Skill = "Languages" | "Technologies" | "Coding Styles" | "Version Control" | "Soft Skills";
-
-// export const Skill: string[] = ["Languages", "Technologies", "Coding Styles", "Version Control", "Soft Skills"]
-
 export type Skills = { [k in Skill] : string[]}
 
 export interface Content

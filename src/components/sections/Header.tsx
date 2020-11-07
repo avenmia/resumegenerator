@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
 import resumeData from "../../assets/resumeData.json"
 import { ResumeData } from "../../types/ResumeData";
-import { ContentSection } from "../styledcontent/Content";
 const resume = resumeData as ResumeData 
 
 const styles = StyleSheet.create({
@@ -36,7 +35,7 @@ export const Header = () => (
       {resume.Header["Job Title"]}
     </Text>
     <View style={styles.contact}>
-      {resume.Header.Contact.map(c => ContentSection(c))} 
+      {resume.Header.Contact.map(c => {return (<Text style={styles.contact}>{c}</Text>)})} 
     </View>
   </View>
 )

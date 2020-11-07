@@ -3,11 +3,11 @@ import { Page, View, Document, StyleSheet } from '@react-pdf/renderer'
 import resumeData from "../assets/resumeData.json"
 import { ResumeData, Skill } from "../types/ResumeData";
 import { HeaderSection } from "./styledcontent/Header";
-import { ContentSection } from "./styledcontent/Content";
 import { SkillSection } from "./sections/Skill";
 import { WorkExperienceSection } from "./sections/WorkExperience";
 import { EducationSection } from "./sections/Education";
 import { Header } from "./sections/Header";
+import { Associations } from "./sections/Associations";
 
 const resume = resumeData as ResumeData 
 
@@ -59,10 +59,7 @@ export const Resume = () => (
           <View>
             {resume.Content["Education"].map(ee => EducationSection(ee))}
           </View>
-          <View>
-            {HeaderSection("Professional Associations, Activities, Achievements")}
-            {resume.Content["Professional Associations, Activities, Achievements"].map(p => ContentSection(p))}
-          </View>
+          <Associations />
         </View>
       </View>
     </Page>

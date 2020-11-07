@@ -49,7 +49,8 @@
         "End Date": "Present",
         "Description": [
           "Created restful APIs in ASP.NET Core, ASP.NET, and Node.js with Azure Functions",
-          "Worked as a front-end developer with TypeScript & React.js in addition to back end developer with C# with ASP.NET Core and SQL Server.",
+          "Worked as a front-end developer with TypeScript & React.js",
+          "Worked as a back end developer using C# with ASP.NET Core and SQL Server.",
           "Used Test Driven Development to implement features.",
           "Wrote robust test suites and maintained code coverage"
         ]
@@ -72,7 +73,7 @@
         "Start Date": "08-2017",
         "End Date": "12-2018",
         "Description": [
-          "Explained concepts such as graphs, maps, trees, sorting algorithms, run-time analysis and other data structures concepts in a relatable matter to students.",
+          "Explained concepts such as graphs, maps, trees, sorting algorithms, run-time analysis in a relatable matter to students.",
           "Analyzed other students’ code to help debug and lead them to the appropriate solution.",
           "Maintained consistent office hours to ensure that students understood the concepts being taught."
         ]
