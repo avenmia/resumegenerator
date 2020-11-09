@@ -16,8 +16,9 @@ export const styles = StyleSheet.create({
     color: '#2F5496',
     paddingTop: "2pt",
     marginTop : "1pt",
-    marginLeft: "300px",
-    marginRight: "20px"
+    marginRight: "20px",
+    position: "absolute",
+    marginLeft: "484px"
   },
   dateSection: {
     flexDirection: "row",
