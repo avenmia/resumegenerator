@@ -126,7 +126,7 @@ export const headerStyles = StyleSheet.create({
   contact: {
     padding: 5,
     fontSize: 11,
-    color: '#0000EE',
+    color: '#2F5496',
     textDecoration: 'underline',
     paddingLeft: "12pt",
     marginRight: "20px"

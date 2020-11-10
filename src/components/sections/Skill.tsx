@@ -8,7 +8,7 @@ const resume = resumeData as ResumeData
 export const SkillSection = (category: "Skills", subcategory: Skill) => {
   return(
     <View style={skillsStyles.section}>
-      <Text style={skillsStyles.subCategory}>{subcategory}: </Text> 
+      <Text style={skillsStyles.subCategory}>{subcategory} </Text> 
       <Text style={styles.middleContent}> {resume.Content[category][subcategory].join(", ")} </Text>
     </View>
 )}
