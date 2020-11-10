@@ -15,7 +15,7 @@ const resume = resumeData as ResumeData
 export const Resume = () => (
   <Document>
     <Page size="LETTER" style={resumeStyles.page}>
-      <View style={resumeStyles.header}>
+      <View style={resumeStyles.mainView}>
         <Header />
         <View>
           {HeaderSection("Skills")}

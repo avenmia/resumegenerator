@@ -7,14 +7,14 @@ import { headerStyles } from "../styles/styles"
 const resume = resumeData as ResumeData 
 
 export const Header = () => (
-  <View>
-    <Text style={headerStyles.pageHeader}>
+  <View style={headerStyles.headerView}>
+    <Text style={headerStyles.pageHeader} >
       {resume.Header.Name}
     </Text>
-    <Text style={headerStyles.jobTitle}>
+    <Text style={headerStyles.jobTitle} >
       {resume.Header["Job Title"]}
     </Text>
-    <View style={headerStyles.contact}>
+    <View style={headerStyles.contactSection} >
       {resume.Header.Contact.map(c => {return (<Text style={headerStyles.contact}>{c}</Text>)})} 
     </View>
   </View>

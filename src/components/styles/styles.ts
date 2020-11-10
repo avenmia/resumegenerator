@@ -102,8 +102,12 @@ export const educationStyles = StyleSheet.create({
 })
 
 export const headerStyles = StyleSheet.create({
+  headerView: {
+    width: "100%"
+  },
   pageHeader:{
     marginTop: "24pt",
+    width: "100%",
     textAlign: 'center',
     fontSize: 28
   },
@@ -114,20 +118,25 @@ export const headerStyles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: "0pt"
   },
-  contact:{
+  contactSection:{
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 5,
-    paddingBottom: 5,
+    width: "100%"
+  },
+  contact: {
+    padding: 5,
     fontSize: 11,
     color: '#0000EE',
-    textDecoration: 'underline'    
+    textDecoration: 'underline',
+    paddingLeft: "12pt",
+    marginRight: "20px"
   }
 })
 
 export const resumeStyles = StyleSheet.create({
+  mainView: {
+    width: "100%",
+  },
   pageHeader:{
     padding: 10,
     textAlign: 'center'
