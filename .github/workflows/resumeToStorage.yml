@@ -21,7 +21,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: LanceMcCarthy/Action-AzureBlobUpload@vX.X
+      - uses: LanceMcCarthy/Action-AzureBlobUpload@v1.7.1
         name: Azure Blob Upload with Destination folder defined
         with:
           connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
