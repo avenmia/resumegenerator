@@ -26,6 +26,6 @@ jobs:
         with:
           connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
           container_name: resume
-          source_folder: src\assets\resume\
+          source_folder: .\src\assets\resume\
           clean_destination_folder: true
           fail_if_source_empty: true
