@@ -31,14 +31,14 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: "16pt",
     marginTop: "5pt",
-    marginLeft: "12pt",
+    paddingHorizontal: 20,
     color: "#2F5496"
   },
   h3: {
     fontFamily: "Roboto",
     fontSize: "13pt",
     color: '#2F5496',
-    marginLeft: "12pt",
+    paddingHorizontal: 20,
     marginTop: "1pt",
     marginBottom: "1pt",
     paddingTop: "2pt"
@@ -46,10 +46,9 @@ export const styles = StyleSheet.create({
   dashedListContent: {
     fontFamily: "Roboto",
     fontSize: "11pt",
-    marginLeft: "15pt",
+    paddingHorizontal: 25,
     paddingTop: "3pt",
     paddingBottom: "3pt",
-    paddingLeft: "3pt"
   },
   middleContent: {
     fontFamily: "Roboto",
@@ -67,7 +66,7 @@ export const workExperienceStyles = StyleSheet.create({
   employer: {
     fontFamily: "Roboto",
     color: "#000000",
-    marginLeft: "12pt",
+    paddingHorizontal: 20,
     fontSize: "11pt",
     fontWeight: "extrabold"
   },
@@ -83,7 +82,7 @@ export const workExperienceStyles = StyleSheet.create({
 
 export const educationStyles = StyleSheet.create({
   degree: {
-    marginLeft: "12pt",
+    paddingHorizontal: 20,
     fontSize: "11"
   },
   major: {
@@ -92,12 +91,11 @@ export const educationStyles = StyleSheet.create({
   section: {
     justifyContent: "space-between",
     fontSize: "11pt",
-    marginLeft: "12pt"
+    paddingHorizontal: 20
   },
   subCategory: {
     fontSize: "11pt",
     paddingBottom: "3pt",
-    marginLeft: "12pt"
   }
 })
 
@@ -128,8 +126,7 @@ export const headerStyles = StyleSheet.create({
     fontSize: 11,
     color: '#2F5496',
     textDecoration: 'underline',
-    paddingLeft: "12pt",
-    marginRight: "20px"
+    paddingHorizontal: 20,
   }
 })
 
@@ -169,7 +166,7 @@ export const skillsStyles = StyleSheet.create({
     fontSize: "11pt",
     paddingBottom: "3pt",
     marginTop: "1pt",
-    marginLeft: "12pt"
+    paddingHorizontal: 20
   },
   content: {
     fontSize: "11pt",
