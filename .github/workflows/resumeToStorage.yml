@@ -21,11 +21,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: LanceMcCarthy/Action-AzureBlobUpload@v1.7.1
-        name: Azure Blob Upload with Destination folder defined
-        with:
-          connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
-          container_name: resume
-          source_folder: .\src\assets\resume\
-          clean_destination_folder: true
-          fail_if_source_empty: true
+      - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
+          with:
+            source_dir: 'src\assets\resume\'
+            container_name: 'resume'
+            connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
+            sync: false
+
+          
