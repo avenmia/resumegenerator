@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
-          source_dir: 'src'
+          source_dir: 'resume'
           container_name: 'resume'
           connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
           sync: false
