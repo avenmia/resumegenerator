@@ -24,7 +24,7 @@ jobs:
       - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
         with:
           source_dir: 'resume'
-          container_name: 'resume'
+          container_name: 'mikesresume'
           connection_string: ${{ secrets.DeploymentsBlobConnectionString }}
           sync: false
 
