@@ -3,9 +3,18 @@
     "Name": "Michael Avendano",
     "Job Title": "Software Engineer",
     "Contact": [
-      "avenmia2@gmail.com",
-      "linkedin.com/in/michael-avendano",
-      "github.com/avenmia"
+      {
+        "name": "avenmia2@gmail.com",
+        "src": "mailto:avenmia2@gmail.com"
+      },
+      {
+        "name": "linkedin.com/in/michael-avendano",
+        "src": "linkedin.com/in/michael-avendano"
+      },
+      {
+        "name": "github.com/avenmia",
+        "src": "github.com/avenmia"
+      }
     ]
   },
   "Content": {

@@ -43,8 +43,14 @@ export interface ResumeData
   Header: {
     Name : string;
     "Job Title": string;
-    Contact: string[];
+    Contact: Contact[];
   },
   Content: Content;
 
+}
+
+interface Contact
+{
+  name: string;
+  src: string;
 }
