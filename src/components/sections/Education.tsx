@@ -8,7 +8,7 @@ export const EducationSection = (educationExperience: EducationExperience) =>
   return (
     <View>
       <View style={styles.dateSection}>
-        <Text style={styles.h3}>{educationExperience["School"]}</Text>
+        <Text style={styles.h2}>{educationExperience["School"]}</Text>
         <Text style={styles.date}>{educationExperience["Start Date"]} to {educationExperience["End Date"]}</Text>
       </View>
       <View style={educationStyles.section}>
