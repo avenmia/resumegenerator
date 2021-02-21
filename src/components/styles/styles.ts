@@ -5,7 +5,7 @@ Font.register({
   fonts: [
     { src: '/fonts/Roboto-Regular.ttf' },
     { src: '/fonts/Roboto-Bold.ttf', fontWeight: 'bold' },
-    { src: '/fonts/Roboto-MediumItalic.ttf', fontWeight: 'normal', fontStyle: 'italic' }
+    { src: '/fonts/Roboto-MediumItalic.ttf', fontWeight: "medium", fontStyle: 'italic' }
   ]
 });
 
@@ -58,9 +58,9 @@ export const styles = StyleSheet.create({
     color: "#2F5496"
   },
   h3: {
-    fontFamily: "Roboto-MediumItalic",
-    fontSize: "13pt",
-    fontWeight: "normal",
+    fontFamily: "Roboto",
+    fontSize: "12pt",
+    fontWeight: "medium",
     fontStyle: "italic",
     lineHeight: "1.2",
     color: '#000',

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "@react-pdf/renderer";
+import { View, Text, Link } from "@react-pdf/renderer";
 import resumeData from "../../assets/resumeData.json"
 import { ResumeData } from "../../types/ResumeData";
 import { headerStyles } from "../styles/styles"
@@ -15,7 +15,7 @@ export const Header = () => (
       {resume.Header["Job Title"]}
     </Text>
     <View style={headerStyles.contactSection} >
-      {resume.Header.Contact.map(c => {return (<Text style={headerStyles.contact}>{c}</Text>)})} 
+      {resume.Header.Contact.map(c => {return (<Link src={c.src} style={headerStyles.contact}>{c.name}</Link>)})} 
     </View>
   </View>
 )
