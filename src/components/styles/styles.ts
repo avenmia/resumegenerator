@@ -3,99 +3,111 @@ import { StyleSheet, Font } from "@react-pdf/renderer";
 Font.register({
   family: 'Roboto',
   fonts: [
-      { src: '/fonts/Roboto-Regular.ttf' },
-      { src: '/fonts/Roboto-Bold.ttf', fontWeight: 'bold' }
-    ]
-  });
+    { src: '/fonts/Roboto-Regular.ttf' },
+    { src: '/fonts/Roboto-Bold.ttf', fontWeight: 'bold' },
+    { src: '/fonts/Roboto-MediumItalic.ttf', fontWeight: "medium", fontStyle: 'italic' }
+  ]
+});
 
+export const skillsStyles = StyleSheet.create({
+  section: {
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  subCategory: {
+    fontSize: "11pt",
+    lineHeight: "1.3",
+    paddingHorizontal: 20,
+    marginTop: "1.4",
+    marginBottom: "1"
+  }
+})
 
 export const styles = StyleSheet.create({
   date: {
     fontFamily: "Roboto",
-    fontSize: "13pt",
+    fontSize: "12pt",
+    lineHeight: "1.4",
+    marginTop: "1",
+    marginBottom: "1",
     color: '#2F5496',
-    paddingTop: "2pt",
-    marginTop : "1pt",
     marginRight: "20px",
     position: "absolute",
-    marginLeft: "484px"
+    marginLeft: "475px"
   },
   dateSection: {
     flexDirection: "row",
   },
   h1: {
-
+    fontFamily: "Roboto",
+    fontSize: "14pt",
+    fontWeight: "bold",
+    lineHeight: "1",
+    marginTop: ".7",
+    marginBottom: ".7",
+    paddingHorizontal: 20,
+    color: "#2F5496"
   },
   h2: {
     fontFamily: "Roboto",
-    fontWeight: "bold",
-    fontSize: "16pt",
-    marginTop: "5pt",
+    fontSize: "13pt",
+    lineHeight: "1.4",
+    marginTop: "1",
+    marginBottom: "1",
     paddingHorizontal: 20,
     color: "#2F5496"
   },
   h3: {
     fontFamily: "Roboto",
-    fontSize: "13pt",
-    color: '#2F5496',
+    fontSize: "12pt",
+    fontWeight: "medium",
+    fontStyle: "italic",
+    lineHeight: "1.2",
+    color: '#000',
     paddingHorizontal: 20,
-    marginTop: "1pt",
-    marginBottom: "1pt",
-    paddingTop: "2pt"
+    marginTop: "1.4",
+    marginBottom: "1.4",
   },
   dashedListContent: {
     fontFamily: "Roboto",
     fontSize: "11pt",
+    lineHeight: "1.5",
+    marginTop: "1.4",
+    marginBottom: "1.4",
     paddingHorizontal: 25,
-    paddingTop: "3pt",
-    paddingBottom: "3pt",
   },
   middleContent: {
     fontFamily: "Roboto",
     fontSize: "11pt",
+    lineHeight: "1.5",
     position: "absolute",
     width: "500px",
-    marginLeft: "20%"
+    marginLeft: "20%",
+    marginTop: "1.4",
+    marginBottom: "1.4"
   }
 })
 
 export const workExperienceStyles = StyleSheet.create({
   section: {
     display: 'flex',
-  },
-  employer: {
-    fontFamily: "Roboto",
-    color: "#000000",
-    paddingHorizontal: 20,
-    fontSize: "11pt",
-    fontWeight: "extrabold"
-  },
-  description: {
-    fontSize: "11pt",
-    marginLeft: "15pt",
-    marginRight: "12pt",
-    paddingTop: "3pt",
-    paddingBottom: "3pt",
-    paddingLeft: "3pt",
   }
 })
 
 export const educationStyles = StyleSheet.create({
-  degree: {
-    paddingHorizontal: 20,
-    fontSize: "11"
-  },
-  major: {
-
-  },
   section: {
     justifyContent: "space-between",
     fontSize: "11pt",
+    lineHeight: "1.5",
+    marginTop: "1.4",
+    marginBottom: "1.4",
     paddingHorizontal: 20
   },
   subCategory: {
     fontSize: "11pt",
-    paddingBottom: "3pt",
+    lineHeight: "1.5",
+    marginTop: "1.4",
+    marginBottom: "1.4"
   }
 })
 
@@ -104,10 +116,10 @@ export const headerStyles = StyleSheet.create({
     width: "100%"
   },
   pageHeader:{
-    marginTop: "24pt",
+    marginTop: "12pt",
     width: "100%",
     textAlign: 'center',
-    fontSize: 28
+    fontSize: 20
   },
   jobTitle: {
     fontSize: 12,
@@ -157,21 +169,3 @@ export const resumeStyles = StyleSheet.create({
   }
 })
 
-export const skillsStyles = StyleSheet.create({
-  section: {
-    display: 'flex',
-    flexDirection: 'row'
-  },
-  subCategory: {
-    fontSize: "11pt",
-    paddingBottom: "3pt",
-    marginTop: "1pt",
-    paddingHorizontal: 20
-  },
-  content: {
-    fontSize: "11pt",
-    position: "absolute",
-    width: "500px",
-    marginLeft: "20%"
-  }
-})
