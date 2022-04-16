@@ -31,17 +31,12 @@
         "Node.js",
         "ASP.NET Core",
         "CosmosDB",
-        "MSSQL Server",
-        "Docker"
+        "MSSQL Server"
       ],
       "Coding Styles": [
         "Coding by Intention",
         "Test Driven Development",
         "Object Oriented Programming"
-      ],
-      "Version Control": [
-        "Subversion",
-        "Git"
       ],
       "Soft Skills": [
         "Strong Work Ethic",
@@ -60,8 +55,18 @@
           "Creating RESTful APIs in ASP.NET Core, ASP.NET, and Node.js with Azure Functions.",
           "Working as a front-end developer with TypeScript & React.js.",
           "Working as a back end developer using C# with ASP.NET Core and SQL Server.",
-          "Using Test Driven Development to implement features.",
-          "Writing robust test suites and maintained code coverage."
+          "Using Test Driven Development to implement features."
+        ]
+      },
+      {
+        "Title": "Volunteer",
+        "Employer": "Code For Hawaii",
+        "Start Date": "01-2022",
+        "End Date": "Present",
+        "Description":[
+          "Triaged issues and contributed code to the Code For Hawaii website.",
+          "Onboarded new members by providing tutorials and familiarizing them with the code base.",
+          "Helped facilitate meetings."
         ]
       },
       {

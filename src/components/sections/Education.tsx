@@ -9,7 +9,7 @@ export const EducationSection = (educationExperience: EducationExperience) =>
     <View>
       <View style={styles.dateSection}>
         <Text style={styles.h2}>{educationExperience["School"]}</Text>
-        <Text style={styles.date}>{educationExperience["Start Date"]} to {educationExperience["End Date"]}</Text>
+        <Text style={styles.date}>{educationExperience["Start Date"]} to Graduated {educationExperience["End Date"]}</Text>
       </View>
       <View style={educationStyles.section}>
         <Text style={educationStyles.subCategory}>Degree</Text>

@@ -15,7 +15,7 @@ export const skillsStyles = StyleSheet.create({
     flexDirection: 'row'
   },
   subCategory: {
-    fontSize: "11pt",
+    fontSize: "10pt",
     lineHeight: "1.3",
     paddingHorizontal: 20,
     marginTop: "1.4",
@@ -26,21 +26,22 @@ export const skillsStyles = StyleSheet.create({
 export const styles = StyleSheet.create({
   date: {
     fontFamily: "Roboto",
-    fontSize: "12pt",
+    fontSize: "11pt",
     lineHeight: "1.4",
     marginTop: "1",
     marginBottom: "1",
     color: '#2F5496',
-    marginRight: "20px",
     position: "absolute",
-    marginLeft: "475px"
+    right: "150px",
+    textAlign: "right"
   },
   dateSection: {
-    flexDirection: "row",
+    justifyContent: "space-between",
+    flexDirection: "row"
   },
   h1: {
     fontFamily: "Roboto",
-    fontSize: "14pt",
+    fontSize: "13pt",
     fontWeight: "bold",
     lineHeight: "1",
     marginTop: ".7",
@@ -50,7 +51,7 @@ export const styles = StyleSheet.create({
   },
   h2: {
     fontFamily: "Roboto",
-    fontSize: "13pt",
+    fontSize: "12pt",
     lineHeight: "1.4",
     marginTop: "1",
     marginBottom: "1",
@@ -59,7 +60,7 @@ export const styles = StyleSheet.create({
   },
   h3: {
     fontFamily: "Roboto",
-    fontSize: "12pt",
+    fontSize: "11pt",
     fontWeight: "medium",
     fontStyle: "italic",
     lineHeight: "1.2",
@@ -70,7 +71,7 @@ export const styles = StyleSheet.create({
   },
   dashedListContent: {
     fontFamily: "Roboto",
-    fontSize: "11pt",
+    fontSize: "10pt",
     lineHeight: "1.5",
     marginTop: "1.4",
     marginBottom: "1.4",
@@ -78,7 +79,7 @@ export const styles = StyleSheet.create({
   },
   middleContent: {
     fontFamily: "Roboto",
-    fontSize: "11pt",
+    fontSize: "10pt",
     lineHeight: "1.5",
     position: "absolute",
     width: "500px",
@@ -97,14 +98,14 @@ export const workExperienceStyles = StyleSheet.create({
 export const educationStyles = StyleSheet.create({
   section: {
     justifyContent: "space-between",
-    fontSize: "11pt",
+    fontSize: "10pt",
     lineHeight: "1.5",
     marginTop: "1.4",
     marginBottom: "1.4",
     paddingHorizontal: 20
   },
   subCategory: {
-    fontSize: "11pt",
+    fontSize: "10pt",
     lineHeight: "1.5",
     marginTop: "1.4",
     marginBottom: "1.4"

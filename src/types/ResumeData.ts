@@ -24,7 +24,6 @@ export enum Skill {
   "Languages" = "Languages",
   "Technologies" = "Technologies",
   "Coding Styles" = "Coding Styles",
-  "Version Control" = "Version Control",
   "Soft Skills" = "Soft Skills"
 }
 
